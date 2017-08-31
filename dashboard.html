@@ -33,13 +33,6 @@
               document.getElementById('sign-in').textContent = 'Sign out';
               document.getElementById('account-details').textContent = JSON.stringify({
                 displayName: displayName,
-                email: email,
-                emailVerified: emailVerified,
-                phoneNumber: phoneNumber,
-                photoURL: photoURL,
-                uid: uid,
-                accessToken: accessToken,
-                providerData: providerData
               }, null, '  ');
             });
           } else {
@@ -60,6 +53,8 @@
   </head>
   <body>
     <h1>login successful</h1>
-    <button onclick="document.write('displayName')">name</button>
+    <div id="account-details">
+
+    </div>
   </body>
 </html>
