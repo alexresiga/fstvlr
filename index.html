@@ -1,70 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="author" content="Alex Resiga">
-  <title>fstvlr</title>
-  <link rel="stylesheet" type="text/css" href="main.css">
-  <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"> </script>
-  <script src="https://www.gstatic.com/firebasejs/ui/2.3.0/firebase-ui-auth__en.js"></script>
-<link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/2.3.0/firebase-ui-auth.css" />
-  <script>
-    // Initialize Firebase
-    var config = {
-      apiKey: "AIzaSyCMae0phU392hzly12XBSAbl02O6_KGNtk",
-      authDomain: "fstvlr-d5aeb.firebaseapp.com",
-      databaseURL: "https://fstvlr-d5aeb.firebaseio.com",
-      projectId: "fstvlr-d5aeb",
-      storageBucket: "fstvlr-d5aeb.appspot.com",
-      messagingSenderId: "239483498365"
-    };
-    firebase.initializeApp(config);
-  </script>
-</head>
-<body>
-  <script type="text/javascript">
-    var provider = new firebase.auth.FacebookAuthProvider();
-    firebase.auth().useDeviceLanguage();
-    firebase.auth().getRedirectResult().then(function(result){
-      if (result.credential){
-        var token = result.credential.accessToken;
-      }
-      var user = result.user;
-    }).catch(function(error) {
-      var errorCode = error.code;
-      var errorMessage = error.message;
-      var email = error.mail;
-      var credential = error.credential;
-    })
-  </script>
-
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="author" content="Alex Resiga">
     <title>Sample FirebaseUI App</title>
-<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyCMae0phU392hzly12XBSAbl02O6_KGNtk",
-    authDomain: "fstvlr-d5aeb.firebaseapp.com",
-    databaseURL: "https://fstvlr-d5aeb.firebaseio.com",
-    projectId: "fstvlr-d5aeb",
-    storageBucket: "fstvlr-d5aeb.appspot.com",
-    messagingSenderId: "239483498365"
-  };
-  firebase.initializeApp(config);
-</script>
-<script src="https://cdn.firebase.com/libs/firebaseui/2.3.0/firebaseui.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/2.3.0/firebaseui.js"></script>
     <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.3.0/firebaseui.css" />
     <script type="text/javascript">
       // FirebaseUI config.
@@ -74,7 +16,6 @@
             // Do something.
             // Return type determines whether we continue the redirect automatically
             // or whether we leave that to developer to handle.
-
             return true;
           },
           uiShown: function() {
@@ -90,7 +31,7 @@
         queryParameterForSignInSuccessUrl: 'signInSuccessUrl',
         // Will use popup for IDP Providers sign-in flow instead of the default, redirect.
         signInFlow: 'popup',
-        signInSuccessUrl: 'https://alexresiga.github.io/fstvlr/dashboard.html',
+        signInSuccessUrl: 'htttps://alexresiga.github.io/fstvlr/',
         signInOptions: [
           // Leave the lines as is for the providers you want to offer your users.
           firebase.auth.GoogleAuthProvider.PROVIDER_ID,
