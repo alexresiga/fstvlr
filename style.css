@@ -1,0 +1,20 @@
+body {
+    background: url('https://i.imgur.com/Eor57Ae.jpg') no-repeat fixed center center;
+    background-size: cover;
+    font-family: 'Fredoka One';
+}
+html {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+.welcome-user {
+  color: : #fff;
+  border-radius: 25px;
+  height: 55px;
+}
+#account-details:before {
+  content: "Welcome,"
+  color: #fff;
+}

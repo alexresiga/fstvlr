@@ -2,11 +2,17 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Alex Resiga">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <title>fstvlr</title>
-<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+    var config = {
     apiKey: "AIzaSyCMae0phU392hzly12XBSAbl02O6_KGNtk",
     authDomain: "fstvlr-d5aeb.firebaseapp.com",
     databaseURL: "https://fstvlr-d5aeb.firebaseio.com",
@@ -15,8 +21,8 @@
     messagingSenderId: "239483498365"
   };
   firebase.initializeApp(config);
-</script>
-<script type="text/javascript">
+  </script>
+  <script type="text/javascript">
       initApp = function() {
         firebase.auth().onAuthStateChanged(function(user) {
           if (user) {
@@ -39,7 +45,7 @@
             // User is signed out.
             document.getElementById('sign-in-status').textContent = 'Signed out';
             document.getElementById('sign-in').textContent = 'Sign in';
-            document.getElementById('account-details').textContent = 'null';
+            document.getElementById('account-details').textContent = 'name';
           }
         }, function(error) {
           console.log(error);
@@ -52,9 +58,13 @@
     </script>
   </head>
   <body>
-    <h1>login successful</h1>
-    <div id="sign-in-status"></div>
-    <div id="sign-in"></div>
-    <div id="account-details"></div>
+<div class="container">
+  <div class="row">
+    <div class="welcome-user">
+      <div id="account-details"></div>
+    </div>
+  </div>
+
+</div>
   </body>
 </html>
