@@ -36,7 +36,7 @@
             var providerData = user.providerData;
             user.getIdToken().then(function(accessToken) {
               document.getElementById('account-details').textContent = JSON.stringify({
-                displayName: displayName
+              displayName
               }, null, '  ');
             });
           } else {

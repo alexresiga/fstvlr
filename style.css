@@ -9,12 +9,10 @@ html {
   margin: 0;
   overflow-x: hidden;
 }
-.welcome-user {
-  color: : #fff;
-  border-radius: 25px;
-  height: 55px;
+#account-details{
+  color: #fff;
 }
-#account-details:before {
+#account-details::before {
   content: "Welcome,"
   color: #fff;
 }
