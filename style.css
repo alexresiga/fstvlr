@@ -1,7 +1,7 @@
 body {
     background: url('https://i.imgur.com/Eor57Ae.jpg') no-repeat fixed center center;
     background-size: cover;
-    font-family: 'Fredoka One';
+    font-family: 'Fredoka One', cursive !important;
 }
 html {
   max-width: 100%;
