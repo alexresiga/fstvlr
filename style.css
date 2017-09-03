@@ -2,6 +2,7 @@ body {
     background: url('https://i.imgur.com/Eor57Ae.jpg') no-repeat fixed center center;
     background-size: cover;
     font-family: 'Fredoka One', cursive !important;
+    color: #fff !important;
 }
 html {
   max-width: 100%;
@@ -9,10 +10,20 @@ html {
   margin: 0;
   overflow-x: hidden;
 }
+.container {
+  border:5px pink solid;
+}
 #account-details{
-  color: #fff;
+  border: 5px black solid;
 }
-#account-details::before {
-  content: "Welcome,"
-  color: #fff;
+#user-email {
+  border: 5px black solid;
 }
+#user-photo {
+  border: 5px black solid;
+}
+/*.rounded {
+  -webkit-clip-path: circle(75px at 50% 50%);
+  clip-path: circle(75px at 50% 50%);
+  border: none!important;
+}*/

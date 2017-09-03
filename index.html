@@ -5,7 +5,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="author" content="Alex Resiga">
-    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Monofett" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <title>FSTVLR</title>
@@ -47,12 +47,10 @@
         queryParameterForSignInSuccessUrl: 'signInSuccessUrl',
         // Will use popup for IDP Providers sign-in flow instead of the default, redirect.
         signInFlow: 'popup',
-        signInSuccessUrl: 'https://alexresiga.github.io/fstvlr/dashboard.html',
+        signInSuccessUrl: 'dashboard.html',
         signInOptions: [
           // Leave the lines as is for the providers you want to offer your users.
-          firebase.auth.GoogleAuthProvider.PROVIDER_ID,
           firebase.auth.FacebookAuthProvider.PROVIDER_ID,
-          firebase.auth.TwitterAuthProvider.PROVIDER_ID,
           {
             provider: firebase.auth.EmailAuthProvider.PROVIDER_ID,
             // Whether the display name should be displayed in the Sign Up page.

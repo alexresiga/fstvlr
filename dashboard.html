@@ -35,13 +35,17 @@
             var phoneNumber = user.phoneNumber;
             var providerData = user.providerData;
             user.getIdToken().then(function(accessToken) {
-              document.getElementById('account-details').textContent = JSON.stringify({
-              displayName
-              }, null, '  ');
+              document.getElementById('user-photo').src = user.photoURL;
+              document.getElementById('user-photo').style.display = 'block';
+              document.getElementById('user-name').textContent = displayName;
+              document.getElementById('user-email').textContent = email;
+
             });
           } else {
-            // User is signed out.
-            document.getElementById('account-details').textContent = 'null';
+            document.getElementById('user-photo').style.display = 'none';
+            document.getElementById('user-name').textContent = 'No user signed in.';
+            document.getElementById('user-email').textContent = 'no email provided';
+
           }
         }, function(error) {
           console.log(error);
@@ -54,12 +58,23 @@
     </script>
   </head>
   <body>
-<div class="container">
-  <div class="row">
-    <div class="welcome-user">
-      <div id="account-details"></div>
+    <div class="container-fluid" style="border:5px solid black;">
+      <div class="row">
+        <div class="col-sm-6">
+
+  <div class="row" style="border:5px green solid;">
+    <div class="col-sm-3" style="padding:0;margin-right:0;">
+      <img class="rounded" src="" id="user-photo">
     </div>
+    <div class="col-sm-9" style="border:5px red solid;margin-right:0;" id="user-name"></div>
+    <div class="col-sm-9" id="user-email"></div>
   </div>
+</div>
+<div class="col-sm-6" style="border:5px grey solid;">
+</div>
+</div>
+</div>
+<div class="container-fluid" style="border:5px solid blue;">
 
 </div>
   </body>

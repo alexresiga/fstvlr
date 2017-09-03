@@ -1,7 +1,7 @@
 body {
     background: url('https://i.imgur.com/Eor57Ae.jpg') no-repeat fixed center center;
     background-size: cover;
-    font-family: 'Fredoka One';
+    font-family: 'Monofett';
 }
 html {
   max-width: 100%;
@@ -11,8 +11,8 @@ html {
 }
 
 .container-fluid {
-  font-family: 'Fredoka One', cursive !important;
-  font-size: 65px;
+  font-family: 'Monofett', cursive !important;
+  font-size: 105px;
   color: #fff;
   /*border: 5px black solid;*/
   text-align: center;
