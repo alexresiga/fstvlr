@@ -35,11 +35,15 @@
             var phoneNumber = user.phoneNumber;
             var providerData = user.providerData;
             user.getIdToken().then(function(accessToken) {
+<<<<<<< HEAD
               document.getElementById('user-photo').src = user.photoURL;
               document.getElementById('user-photo').style.display = 'block';
               document.getElementById('user-name').textContent = displayName;
               document.getElementById('user-email').textContent = email;
 
+=======
+              document.getElementById('account-details').textContent = displayName;
+>>>>>>> origin/gh-pages
             });
           } else {
             document.getElementById('user-photo').style.display = 'none';
